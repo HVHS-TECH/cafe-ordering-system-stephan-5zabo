@@ -1,16 +1,64 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+<html lang="en">
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<head>
+  <title>The Crown</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- stylesheets *******************************************-->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/png" href="../assets/dtec_favicon.png">
+</head>
+
+<!--*************************************************************
+  BODY
+**************************************************************-->
+
+<body>
+  <h1>T18-Validation</h1>
+  <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
+  <form onsubmit="return false;">
+    <label for="formName">Name:</label>
+    <input type = "text" id="nameField" required name="formName" placeholder="Name"><br><br>
+
+    <label for="formName">Age:</label>
+    <input type = "text" id="ageField" required name="formName" placeholder="Age (1-100)" min="1" max="100"><br><br>
+    
+    <label for="formName">Pocket Money:</label>
+    <input type = "text" id="moneyField" required name="formName" placeholder="Pocket Money (0-1000)" min="0" max="1000"><br><br>
+    <label id="changeField">
+
+      <label for="formName">On a scale of 0-3, how much do you like chocolate?</label>
+    <input type = "text" id="chocolateField" required name="formName" placeholder="0-3" min="0" max="3">
+    <input type = "submit" onClick=getFormInput()>
+    <br>
+
+</form>
+<br>
+
+<form onsubmit="return false;">
+<button onClick="addChocolate()">Add chocolate</button>
+<button onClick="addChips()">Add chips</button>
+<button onClick="addDrink()">Add drink</button>
+<button onClick="showCart()">Show Cart</button>
+</form>
+
+
+  <div id="spaceForJavaScriptOutput">
 
   
-<script src="script.js"></script>
+
+  </div>
+
+
+
+<script src="../t18_validation.js"></script>
 </body>
+
 </html>
+<!--*************************************************************
+  END OF T18_VALIDATION.HTML
+**************************************************************-->
 
 

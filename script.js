@@ -1,1 +1,121 @@
-console.log("Hello world!")
+/****************************
+Name of task: Validation
+****************************/
+console.log("Running t01_javascriptAndHtml.js")
+
+//Variables
+ let userName
+ let age
+ let money
+ let change
+ let shoppingCart = [];
+let chocolate
+let chips
+let drink
+
+/****************************
+Main code
+****************************/
+const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+displayWelcome(4 , 3 , 2.50);
+/****************************
+Functions
+****************************/
+function displayWelcome(chocolate, chips, drink){
+    OUTPUT.innerHTML += "<p>Chocolate bar: $"+ chocolate +"</p>";
+    OUTPUT.innerHTML += "<p>Chips: $"+ chips +" </p>";
+    OUTPUT.innerHTML += "<p>Drink: $"+ drink +" </p>";
+}
+function addChocolate(){
+shoppingCart.push("chocolate");
+    OUTPUT.innerHTML += "added chocolate<br>";
+}
+function addChips(){
+shoppingCart.push("chips");
+    OUTPUT.innerHTML += "added chips<br>";
+}
+function addDrink(){
+shoppingCart.push("drink");
+    OUTPUT.innerHTML += "added drink<br>";
+}
+function showCart(){
+
+    OUTPUT.innerHTML += "Cart Contents:<br>";
+
+    for (let i=0; i < shoppingCart.length; i++){
+    OUTPUT.innerHTML += shoppingCart[i]+"<br>";
+  }
+}
+function getFormInput(){
+    const NAME_FIELD = document.getElementById("nameField");
+    if (NAME_FIELD.checkValidity()=== false)  {
+    OUTPUT.innerHTML = "please fill out the form correctly"
+}else{
+userName = NAME_FIELD.value;
+ OUTPUT.innerHTML = "<p> Your name is "+userName+"</p>"
+}
+const AGE_FIELD = document.getElementById("ageField");
+if (AGE_FIELD.value < 0){
+    OUTPUT.innerHTML = "<p>how are you alive??</p>"
+} else if (AGE_FIELD.value > 100){
+    OUTPUT.innerHTML += "you are probably not alive anymore??"
+} else if (AGE_FIELD.value == 0){
+    OUTPUT.innerHTML += "you are a newborn??"
+} else if (AGE_FIELD.value == 100){
+    OUTPUT.innerHTML += "congrats on being alive for a century!!"
+}
+if (AGE_FIELD.checkValidity()=== false)  {
+    OUTPUT.innerHTML = "please fill out the form correctly"
+}else{
+age = AGE_FIELD.value;
+ OUTPUT.innerHTML += "<p> You are "+age+" years old"+"</p>"
+}
+ 
+ const MONEY_FIELD = document.getElementById("moneyField");
+if (MONEY_FIELD.value < 0){
+    OUTPUT.innerHTML += "you can't have negative money!!"
+} else if (MONEY_FIELD.value > 1000){
+    OUTPUT.innerHTML += "you are a millionaire!!"
+} else if (MONEY_FIELD.value == 0){
+    OUTPUT.innerHTML += "you are broke!!"
+} else if (MONEY_FIELD.value == 1000){
+    OUTPUT.innerHTML += "congrats on being a millionaire!!"
+}
+if (MONEY_FIELD.checkValidity()=== false)  {
+    OUTPUT.innerHTML = "please fill out the form correctly"
+}else{
+money = MONEY_FIELD.value;
+ OUTPUT.innerHTML += "<p> You have "+money+" dollars"+"</p>"
+}
+ displayWelcome(4 , 3 , 2.50);
+
+    OUTPUT.innerHTML += "<p>a chocolate bar costs $4.</p>"
+ 
+if (money >= 4){
+    OUTPUT.innerHTML += "<p>you CAN afford a chocolate bar.</p>"
+}else{
+    OUTPUT.innerHTML += "<p>you CAN'T afford a chocolate bar.</p>"
+}
+const CHANGE_FIELD = document.getElementById("changeField");
+ change = money - 4;
+ CHANGE_FIELD.value = change;
+ OUTPUT.innerHTML += "<p>Your change is $"+change+"</p>"
+
+ const CHOCOLATE_FIELD = document.getElementById("chocolateField");
+ let chocolateRating = ["You loathe chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
+
+ let choice = Number(CHOCOLATE_FIELD.value);
+
+
+ if (age < 20){
+    console.log("prolly too young yo")
+}
+if (age > 20){
+    console.log("unc")
+}
+if (age == 20){
+    console.log("this is good")
+}
+}
+
+
