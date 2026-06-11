@@ -89,7 +89,7 @@ money = MONEY_FIELD.value;
 }
  displayWelcome(4 , 3 , 2.50);
 
-    OUTPUT.innerHTML += "<p>a chocolate bar costs $4.</p>"
+    OUTPUT.innerHTML += "<p>a Krabby Patty costs $4.</p>"
  
 if (money >= 4){
     OUTPUT.innerHTML += "<p>you CAN afford a chocolate bar.</p>"
