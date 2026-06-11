@@ -87,12 +87,12 @@ if (MONEY_FIELD.checkValidity()=== false)  {
 money = MONEY_FIELD.value;
  OUTPUT.innerHTML += "<p> You have "+money+" dollars"+"</p>"
 }
- displayWelcome(4 , 3 , 2.50);
+ displayWelcome(1.25 , 0.50 , 1);
 
-    OUTPUT.innerHTML += "<p>a Krabby Patty costs $4.</p>"
+    OUTPUT.innerHTML += "<p>a Krabby Patty costs $1.25.</p>"
  
 if (money >= 4){
-    OUTPUT.innerHTML += "<p>you CAN afford a chocolate bar.</p>"
+    OUTPUT.innerHTML += "<p>you CAN afford a Krabby.</p>"
 }else{
     OUTPUT.innerHTML += "<p>you CAN'T afford a chocolate bar.</p>"
 }
