@@ -21,22 +21,22 @@ displayWelcome(4 , 3 , 2.50);
 /****************************
 Functions
 ****************************/
-function displayWelcome(chocolate, chips, drink){
-    OUTPUT.innerHTML += "<p>Chocolate bar: $"+ chocolate +"</p>";
-    OUTPUT.innerHTML += "<p>Chips: $"+ chips +" </p>";
-    OUTPUT.innerHTML += "<p>Drink: $"+ drink +" </p>";
+function displayWelcome(KrabbyPatty, KelpFries, KelpShake){
+    OUTPUT.innerHTML += "<p>KrabbyPatty: $"+ KrabbyPatty +"</p>";
+    OUTPUT.innerHTML += "<p>KelpFries: $"+ KelpFries +" </p>";
+    OUTPUT.innerHTML += "<p>KelpShake: $"+ KelpShake +" </p>";
 }
 function addChocolate(){
-shoppingCart.push("chocolate");
-    OUTPUT.innerHTML += "added chocolate<br>";
+shoppingCart.push("KrabbyPatty");
+    OUTPUT.innerHTML += "added KrabbyPatty<br>";
 }
 function addChips(){
-shoppingCart.push("chips");
-    OUTPUT.innerHTML += "added chips<br>";
+shoppingCart.push("KelpFries");
+    OUTPUT.innerHTML += "added KelpFries<br>";
 }
 function addDrink(){
-shoppingCart.push("drink");
-    OUTPUT.innerHTML += "added drink<br>";
+shoppingCart.push("KelpShake");
+    OUTPUT.innerHTML += "added KelpShake<br>";
 }
 function showCart(){
 
