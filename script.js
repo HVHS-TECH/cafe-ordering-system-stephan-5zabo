@@ -77,7 +77,7 @@ money = MONEY_FIELD.value;
     OUTPUT.innerHTML += "<p>a Krabby Patty costs $1.25.</p>"
  
 if (money >= shoppingCart){
-    OUTPUT.innerHTML += "<p>your can dine with us today sir. </p>"
+    OUTPUT.innerHTML += "<p>you can dine with us today sir. </p>"
 }else{
     OUTPUT.innerHTML += "<p>you Can not afford to dine here sir.</p>"
 }
