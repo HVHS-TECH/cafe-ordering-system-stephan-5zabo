@@ -74,7 +74,7 @@ money = MONEY_FIELD.value;
 }
  displayWelcome(1.25 , 0.50 , 1);
 
-    OUTPUT.innerHTML += "<p>a Krabby Patty costs $1.25.</p>"
+    OUTPUT.innerHTML += "<p>Your Total cost is "+shoppingCart+"</p>"
  
 if (money >= shoppingCart){
     OUTPUT.innerHTML += "<p>you can dine with us today sir. </p>"
