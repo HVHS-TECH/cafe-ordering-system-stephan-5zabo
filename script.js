@@ -25,6 +25,11 @@ function displayWelcome(KrabbyPatty, KelpFries, KelpShake){
     OUTPUT.innerHTML += "<p>KrabbyPatty: $"+ KrabbyPatty +"</p>";
     OUTPUT.innerHTML += "<p>KelpFries: $"+ KelpFries +" </p>";
     OUTPUT.innerHTML += "<p>KelpShake: $"+ KelpShake +" </p>";
+}if (money >= 1.25){
+    OUTPUT.innerHTML += "<p>you CAN afford a Krabby Patty.</p>"
+}else{
+    OUTPUT.innerHTML += "<p>you CAN'T afford a Krabby Patty.</p>"
+
 }
 function addKrabbyPatty() {
 shoppingCart.push("1.25");
