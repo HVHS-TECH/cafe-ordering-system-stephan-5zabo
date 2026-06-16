@@ -76,7 +76,7 @@ money = MONEY_FIELD.value;
 
     OUTPUT.innerHTML += "<p>a Krabby Patty costs $1.25.</p>"
  
-if (money >= 1.25){
+if (money >= ){
     OUTPUT.innerHTML += "<p>your can dine with us today sir. </p>"
 }else{
     OUTPUT.innerHTML += "<p>you Can not afford to dine here sir.</p>"
