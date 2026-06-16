@@ -54,22 +54,7 @@ function getFormInput(){
 userName = NAME_FIELD.value;
  OUTPUT.innerHTML = "<p> Your name is "+userName+"</p>"
 }
-const AGE_FIELD = document.getElementById("ageField");
-if (AGE_FIELD.value < 0){
-    OUTPUT.innerHTML = "<p>how are you alive??</p>"
-} else if (AGE_FIELD.value > 100){
-    OUTPUT.innerHTML += "you are probably not alive anymore??"
-} else if (AGE_FIELD.value == 0){
-    OUTPUT.innerHTML += "you are a newborn??"
-} else if (AGE_FIELD.value == 100){
-    OUTPUT.innerHTML += "congrats on being alive for a century!!"
-}
-if (AGE_FIELD.checkValidity()=== false)  {
-    OUTPUT.innerHTML = "please fill out the form correctly"
-}else{
-age = AGE_FIELD.value;
- OUTPUT.innerHTML += "<p> You are "+age+" years old"+"</p>"
-}
+
  
  const MONEY_FIELD = document.getElementById("moneyField");
 if (MONEY_FIELD.value < 0){
@@ -107,15 +92,5 @@ const CHANGE_FIELD = document.getElementById("changeField");
  let choice = Number(CHOCOLATE_FIELD.value);
 
 
- if (age < 20){
-    console.log("prolly too young yo")
-}
-if (age > 20){
-    console.log("unc")
-}
-if (age == 20){
-    console.log("this is good")
-}
-}
 
 
