@@ -26,7 +26,7 @@ function displayWelcome(KrabbyPatty, KelpFries, KelpShake){
     OUTPUT.innerHTML += "<p>KelpFries: $"+ KelpFries +" </p>";
     OUTPUT.innerHTML += "<p>KelpShake: $"+ KelpShake +" </p>";
 }
-function addKrabbyPatty(){
+function addKrabbyPatty() {
 shoppingCart.push("KrabbyPatty");
     OUTPUT.innerHTML += "added KrabbyPatty<br>";
 }
