@@ -70,8 +70,13 @@ money = MONEY_FIELD.value;
  OUTPUT.innerHTML += "<p> You have "+money+" dollars"+"</p>"
 }
  displayWelcome(1.25 , 0.50 , 1);
+let total = 0;
 
-    OUTPUT.innerHTML += "<p>Your Total cost is "+shoppingCart+"</p>"
+for(let i = 0; i < shoppingCart.length; i++){
+    total += Number(shoppingCart[i]);
+}
+
+OUTPUT.innerHTML += "<p>Your Total cost is $" + total + "</p>";
  
 if (money >= shoppingCart){
     OUTPUT.innerHTML += "<p>you can dine with us today sir. </p>"
