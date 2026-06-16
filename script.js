@@ -83,7 +83,7 @@ if (money >= shoppingCart){
 }
 
 const CHANGE_FIELD = document.getElementById("changeField");
- change = money - 1.25;
+ change = money - shoppingCart;
  CHANGE_FIELD.value = change;
  OUTPUT.innerHTML += "<p>Your change is $"+change+"</p>"
 
