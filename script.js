@@ -17,7 +17,7 @@ let drink
 Main code
 ****************************/
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-displayWelcome(4 , 3 , 2.50);
+displayWelcome(1.25 , 0.50 , 1);
 /****************************
 Functions
 ****************************/
@@ -49,7 +49,7 @@ function showCart(){
 function getFormInput(){
     const NAME_FIELD = document.getElementById("nameField");
     if (NAME_FIELD.checkValidity()=== false)  {
-    OUTPUT.innerHTML = "please fill out the form correctly"
+    OUTPUT.innerHTML = "please order or i may have to ask you to leave"
 }else{
 userName = NAME_FIELD.value;
  OUTPUT.innerHTML = "<p> Your name is "+userName+"</p>"
