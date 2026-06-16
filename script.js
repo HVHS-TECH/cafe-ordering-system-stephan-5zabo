@@ -89,8 +89,4 @@ const CHANGE_FIELD = document.getElementById("changeField");
  const CHOCOLATE_FIELD = document.getElementById("chocolateField");
  let chocolateRating = ["You loathe chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
 
- let choice = Number(CHOCOLATE_FIELD.value);
-
-
-
-
+ let choice = Number(CHOCOLATE_FIELD.value);}
