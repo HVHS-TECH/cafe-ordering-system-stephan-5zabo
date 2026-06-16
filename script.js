@@ -49,10 +49,10 @@ function showCart(){
 function getFormInput(){
     const NAME_FIELD = document.getElementById("nameField");
     if (NAME_FIELD.checkValidity()=== false)  {
-    OUTPUT.innerHTML = "please order or i may have to ask you to leave"
+    OUTPUT.innerHTML = "please give us a order name."
 }else{
 userName = NAME_FIELD.value;
- OUTPUT.innerHTML = "<p> Your name is "+userName+"</p>"
+ OUTPUT.innerHTML = "<p> Your order name is "+userName+"</p>"
 }
 
  
@@ -77,10 +77,11 @@ money = MONEY_FIELD.value;
     OUTPUT.innerHTML += "<p>a Krabby Patty costs $1.25.</p>"
  
 if (money >= 1.25){
-    OUTPUT.innerHTML += "<p>you CAN afford a Krabby Patty.</p>"
+    OUTPUT.innerHTML += "<p>your can dine with us today sir. </p>"
 }else{
-    OUTPUT.innerHTML += "<p>you CAN'T afford a Krabby Patty.</p>"
+    OUTPUT.innerHTML += "<p>you Can not afford to dine here sir.</p>"
 }
+
 const CHANGE_FIELD = document.getElementById("changeField");
  change = money - 1.25;
  CHANGE_FIELD.value = change;
