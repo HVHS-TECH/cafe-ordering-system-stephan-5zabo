@@ -26,15 +26,15 @@ function displayWelcome(KrabbyPatty, KelpFries, KelpShake){
     OUTPUT.innerHTML += "<p>KelpFries: $"+ KelpFries +" </p>";
     OUTPUT.innerHTML += "<p>KelpShake: $"+ KelpShake +" </p>";
 }
-function addChocolate(){
+function addKrabbyPatty(){
 shoppingCart.push("KrabbyPatty");
     OUTPUT.innerHTML += "added KrabbyPatty<br>";
 }
-function addChips(){
+function addKelpFries(){
 shoppingCart.push("KelpFries");
     OUTPUT.innerHTML += "added KelpFries<br>";
 }
-function addDrink(){
+function addKelpShake(){
 shoppingCart.push("KelpShake");
     OUTPUT.innerHTML += "added KelpShake<br>";
 }
