@@ -76,17 +76,14 @@ money = MONEY_FIELD.value;
 
     OUTPUT.innerHTML += "<p>a Krabby Patty costs $1.25.</p>"
  
-if (money >= 4){
-    OUTPUT.innerHTML += "<p>you CAN afford a Krabby.</p>"
+if (money >= 1.25){
+    OUTPUT.innerHTML += "<p>you CAN afford a Krabby Patty.</p>"
 }else{
-    OUTPUT.innerHTML += "<p>you CAN'T afford a chocolate bar.</p>"
+    OUTPUT.innerHTML += "<p>you CAN'T afford a Krabby Patty.</p>"
 }
 const CHANGE_FIELD = document.getElementById("changeField");
- change = money - 4;
+ change = money - 1.25;
  CHANGE_FIELD.value = change;
  OUTPUT.innerHTML += "<p>Your change is $"+change+"</p>"
-
- const CHOCOLATE_FIELD = document.getElementById("chocolateField");
- let chocolateRating = ["You loathe chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
 
  let choice = Number(CHOCOLATE_FIELD.value);}
