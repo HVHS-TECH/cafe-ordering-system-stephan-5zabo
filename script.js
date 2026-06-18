@@ -74,6 +74,7 @@ let total = 0;
 
 for(let i = 0; i < shoppingCart.length; i++){
     total += Number(shoppingCart[i]);  
+    OUTPUT,innerHTML +total+;
 }
 
 OUTPUT.innerHTML += "<p>Your Total cost is $" + total + "</p>";
