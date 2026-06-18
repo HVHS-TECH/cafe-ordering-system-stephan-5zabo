@@ -79,14 +79,15 @@ for(let i = 0; i < shoppingCart.length; i++){
 
 OUTPUT.innerHTML += "<p>Your Total cost is $" + total + "</p>";
  
-if (money >= shoppingCart){
+//if (money >= shoppingCart){
+if (money >= total){
     OUTPUT.innerHTML += "<p>you can dine with us today sir. </p>"
 }else{
     OUTPUT.innerHTML += "<p>you Can not afford to dine here sir.</p>"
 }
 
 const CHANGE_FIELD = document.getElementById("changeField");
- change = money - shoppingCart;
+ change = money - total;
  CHANGE_FIELD.value = change;
  OUTPUT.innerHTML += "<p>Your change is $"+change+"</p>"
 
