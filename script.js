@@ -21,6 +21,7 @@ displayWelcome(1.25 , 0.50 , 1);
 /****************************
 Functions
 ****************************/
+/*Pricing, ordering */
 function displayWelcome(KrabbyPatty, KelpFries, KelpShake){
     OUTPUT.innerHTML += "<p>KrabbyPatty: $"+ KrabbyPatty +"</p>";
     OUTPUT.innerHTML += "<p>KelpFries: $"+ KelpFries +" </p>";
@@ -79,7 +80,7 @@ for(let i = 0; i < shoppingCart.length; i++){
 
 OUTPUT.innerHTML += "<p>Your Total cost is $" + total + "</p>";
  
-//if (money >= shoppingCart){
+//shopping cart/ total at end.
 if (money >= total){
     OUTPUT.innerHTML += "<p>you can dine with us today sir. </p>"
 }else{
